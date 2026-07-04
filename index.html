@@ -7,139 +7,145 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Outfit', sans-serif;
-            background-color: #f4f9fc;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            /* Ultra-Sunny Radial Gradient: Simulates a bright sun shining into clear ocean water */
+            background: radial-gradient(circle at 15% 15%, #fbbf24 0%, #fde047 25%, #bae6fd 60%, #38bdf8 100%);
+            background-attachment: fixed;
+            color: #1e293b;
         }
-        .hero-gradient {
-            background: linear-gradient(180deg, #0284c7 0%, #0ea5e9 40%, #f4f9fc 100%);
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+            border: 1px solid rgba(255, 255, 255, 0.6);
         }
         details summary::-webkit-details-marker {
             display: none;
         }
     </style>
 </head>
-<body class="text-slate-800 antialiased selection:bg-sky-200">
+<body class="antialiased selection:bg-amber-300">
 
-    <!-- Scenic Ocean Header Area -->
-    <div class="hero-gradient pt-16 pb-6 px-6 text-center text-white relative">
-        <div class="max-w-4xl mx-auto space-y-3">
-            <span class="text-xs font-bold tracking-widest uppercase bg-white/20 backdrop-blur-md px-3 py-1 rounded-full inline-block">Mediterranean Summer</span>
-            <h1 class="text-4xl sm:text-6xl font-bold tracking-tight text-white drop-shadow-sm">Ayia Napa Family Escape</h1>
-            <p class="text-sky-100 text-lg sm:text-xl font-light max-w-xl mx-auto">Sun, turquoise tides, and high-speed water adventures built for the crew.</p>
-            <div class="pt-4">
-                <span class="inline-flex items-center rounded-full bg-sky-950/30 px-4 py-1.5 text-sm font-medium border border-white/20 backdrop-blur-sm">
-                    📅 July 23 – July 27, 2026
-                </span>
-            </div>
+    <!-- Warm, Sunny Hero Header -->
+    <header class="max-w-4xl mx-auto pt-16 pb-10 px-6 text-center md:text-left md:flex md:items-end md:justify-between">
+        <div>
+            <span class="text-xs font-bold tracking-widest text-amber-800 uppercase bg-white/70 px-4 py-1.5 rounded-full inline-block mb-4 shadow-sm">☀️ Mediterranean Summer</span>
+            <h1 class="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl drop-shadow-sm">Ayia Napa Escape</h1>
+            <p class="mt-3 text-lg text-slate-800 font-semibold max-w-lg">Sun-soaked beaches, high-thrill waterparks, and deep ocean safaris.</p>
         </div>
-    </div>
+        <div class="mt-6 md:mt-0 text-center md:text-right">
+            <span class="inline-flex items-center rounded-full bg-sky-500 px-5 py-2.5 text-sm font-bold text-white shadow-md shadow-sky-500/30">
+                📅 July 23 – July 27, 2026
+            </span>
+        </div>
+    </header>
 
-    <!-- Main Dynamic Content Wrapper -->
-    <main class="max-w-4xl mx-auto px-6 pb-20 space-y-10 -mt-2">
+    <main class="max-w-4xl mx-auto px-6 pb-24 space-y-10">
 
-        <!-- Essential Boarding & Logistics Blocks -->
-        <section class="grid grid-cols-1 md:grid-cols-3 gap-5">
-            <div class="p-6 bg-white rounded-3xl border border-sky-100 shadow-sm transition hover:shadow-md">
-                <div class="flex items-center gap-2 mb-3">
-                    <span class="p-1.5 bg-sky-50 text-sky-600 rounded-lg">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" /></svg>
+        <!-- Essentials Section -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="p-6 glass-card rounded-3xl transition hover:shadow-lg">
+                <div class="flex items-center gap-2 mb-4">
+                    <span class="p-2 rounded-xl bg-amber-100 text-amber-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" /></svg>
                     </span>
-                    <span class="text-xs font-bold uppercase tracking-wider text-slate-400">Flight Windows</span>
+                    <span class="text-xs font-bold uppercase tracking-wider text-slate-600">Flight Windows</span>
                 </div>
                 <div class="space-y-3 text-sm">
                     <div>
-                        <span class="font-medium text-slate-900 block">LY5133 Departure</span>
-                        <span class="text-slate-500">July 23 at 20:30</span>
+                        <span class="font-bold text-slate-900 block">LY5133 Departure</span>
+                        <span class="text-slate-700 font-semibold">July 23 at 20:30[cite: 1]</span>
                     </div>
-                    <div class="pt-2.5 border-t border-slate-100">
-                        <span class="font-medium text-slate-900 block">LY5134 Return</span>
-                        <span class="text-slate-500">July 27 at 21:55</span>
+                    <div class="pt-3 border-t border-slate-200">
+                        <span class="font-bold text-slate-900 block">LY5134 Return</span>
+                        <span class="text-slate-700 font-semibold">July 27 at 21:55[cite: 1]</span>
                     </div>
                 </div>
             </div>
 
-            <div class="p-6 bg-white rounded-3xl border border-sky-100 shadow-sm transition hover:shadow-md">
-                <div class="flex items-center gap-2 mb-3">
-                    <span class="p-1.5 bg-sky-50 text-sky-600 rounded-lg">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5m0 0V9a2 2 0 012-2h2a2 2 0 012 2v12m-6 0h6" /></svg>
+            <div class="p-6 glass-card rounded-3xl transition hover:shadow-lg">
+                <div class="flex items-center gap-2 mb-4">
+                    <span class="p-2 rounded-xl bg-sky-100 text-sky-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5m0 0V9a2 2 0 012-2h2a2 2 0 012 2v12m-6 0h6" /></svg>
                     </span>
-                    <span class="text-xs font-bold uppercase tracking-wider text-slate-400">Resort Anchor</span>
+                    <span class="text-xs font-bold uppercase tracking-wider text-slate-600">Resort Anchor</span>
                 </div>
-                <p class="text-sm text-slate-500 mb-4">Prime sand access, large pool footprints, with breakfasts ready daily.</p>
-                <a href="https://www.booking.com/hotel/cy/cyprotel-florida-ayia-napa.html" target="_blank" class="inline-flex items-center text-sm font-semibold text-sky-600 hover:text-sky-700 transition">
-                    Cyprotel Florida Site →
+                <p class="text-sm text-slate-700 font-semibold mb-4">Prime beach cove access, massive pools, and breakfasts included daily.</p>
+                <a href="https://www.booking.com/hotel/cy/cyprotel-florida-ayia-napa.html" target="_blank" class="inline-flex items-center text-sm font-bold text-sky-700 hover:text-sky-800 transition">
+                    Cyprotel Florida Resort →
                 </a>
             </div>
 
-            <div class="p-6 bg-white rounded-3xl border border-sky-100 shadow-sm transition hover:shadow-md">
-                <div class="flex items-center gap-2 mb-3">
-                    <span class="p-1.5 bg-sky-50 text-sky-600 rounded-lg">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" /></svg>
+            <div class="p-6 glass-card rounded-3xl transition hover:shadow-lg">
+                <div class="flex items-center gap-2 mb-4">
+                    <span class="p-2 rounded-xl bg-amber-100 text-amber-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" /></svg>
                     </span>
-                    <span class="text-xs font-bold uppercase tracking-wider text-slate-400">Road Operations</span>
+                    <span class="text-xs font-bold uppercase tracking-wider text-slate-600">Road Operations</span>
                 </div>
-                <p class="text-sm text-slate-500 mb-3">Rental pickup assigned to <strong>Get Your Car</strong> right out of Larnaca tarmac.</p>
-                <span class="inline-flex items-center rounded-full bg-cyan-50 px-2.5 py-0.5 text-xs font-medium text-cyan-700 ring-1 ring-inset ring-cyan-600/20">
-                    ⚠️ Keep left on highway corridors
+                <p class="text-sm text-slate-700 font-semibold mb-4">Rental pickup assigned to <strong>Get Your Car</strong> right at Larnaca tarmac.</p>
+                <span class="inline-flex items-center rounded-lg bg-amber-100 px-3 py-1.5 text-xs font-bold text-amber-900 border border-amber-200">
+                    ⚠️ Drive on the Left Side
                 </span>
             </div>
         </section>
 
-        <!-- Hidden Interactive Budget Section (Off Separate) -->
-        <section class="border border-sky-100 bg-white rounded-3xl shadow-sm overflow-hidden">
+        <!-- Hidden Budget Section -->
+        <section class="glass-card rounded-3xl overflow-hidden">
             <details class="group">
-                <summary class="flex items-center justify-between p-6 cursor-pointer select-none list-none bg-sky-50/40">
+                <summary class="flex items-center justify-between p-6 cursor-pointer select-none list-none bg-white/40 hover:bg-white/60 transition">
                     <div class="flex items-center gap-3">
-                        <span class="p-2 rounded-2xl bg-sky-50 text-sky-600">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        <span class="p-2 rounded-2xl bg-white text-amber-600 shadow-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                         </span>
                         <div>
-                            <h2 class="text-base font-semibold text-slate-900">Activity & Food Budget Sheet</h2>
-                            <p class="text-xs text-slate-400">Click to unfold comprehensive pricing for 3 adult passes</p>
+                            <h2 class="text-base font-bold text-slate-900">Activity & Food Budget Guide</h2>
+                            <p class="text-xs text-slate-700 font-semibold mt-0.5">Click to unfold comprehensive pricing for 3 adult passes</p>
                         </div>
                     </div>
-                    <span class="text-slate-400 transition group-open:rotate-180">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
+                    <span class="text-slate-600 transition group-open:rotate-180 bg-white/50 p-2 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
                     </span>
                 </summary>
-                <div class="p-6 pt-2 border-t border-sky-50">
+                <div class="p-6 pt-2 border-t border-slate-200/50 bg-white/80">
                     <div class="overflow-x-auto">
-                        <table class="w-full text-left text-sm text-slate-600">
+                        <table class="w-full text-left text-sm text-slate-700">
                             <thead>
-                                <tr class="text-slate-400 font-medium border-b border-slate-100">
-                                    <th class="pb-3 font-medium">Domain</th>
-                                    <th class="pb-3 font-medium">Est. Volume Cost</th>
-                                    <th class="pb-3 font-medium">Operational Directives</th>
+                                <tr class="text-slate-600 font-bold border-b border-slate-200 text-xs uppercase tracking-wider">
+                                    <th class="pb-3">Domain</th>
+                                    <th class="pb-3">Est. Total Cost</th>
+                                    <th class="pb-3">Operational Directives</th>
                                 </tr>
                             </thead>
-                            <tbody class="divide-y divide-slate-100">
+                            <tbody class="divide-y divide-slate-200 font-semibold">
                                 <tr>
-                                    <td class="py-3.5 font-medium text-slate-900">WaterWorld Passes</td>
-                                    <td class="py-3.5">~€147 <span class="text-slate-400 text-xs">/ ~€74 rerun</span></td>
-                                    <td class="py-3.5 text-slate-500">€49pp flat rate. Verify secondary day counters prior to departure checkpoints.</td>
+                                    <td class="py-4 font-bold text-slate-900">WaterWorld Passes</td>
+                                    <td class="py-4 text-sky-700">~€147 <span class="text-slate-500 text-xs font-medium">/ ~€74 rerun</span></td>
+                                    <td class="py-4 text-slate-600 font-medium">€49pp flat rate. Verify secondary day passes at Customer Service prior to exit.</td>
                                 </tr>
                                 <tr>
-                                    <td class="py-3.5 font-medium text-slate-900">Sea Safari Charter</td>
-                                    <td class="py-3.5">€45 – €300+</td>
-                                    <td class="py-3.5 text-slate-500">Ranges from open deck line runners up to complete private high-speed RIB rentals.</td>
+                                    <td class="py-4 font-bold text-slate-900">Sea Safari Charter</td>
+                                    <td class="py-4 text-sky-700">€45 – €300+</td>
+                                    <td class="py-4 text-slate-600 font-medium">From shared glass-bottom excursions up to complete private high-speed RIB charters.</td>
                                 </tr>
                                 <tr>
-                                    <td class="py-3.5 font-medium text-slate-900">Nissi Sea Operations</td>
-                                    <td class="py-3.5">€65 – €150</td>
-                                    <td class="py-3.5 text-slate-500">Twin jet hulls average €65–€80 for 15 min sequences. Family inflatables run ~€25pp.</td>
+                                    <td class="py-4 font-bold text-slate-900">Nissi Sea Operations</td>
+                                    <td class="py-4 text-sky-700">€65 – €150</td>
+                                    <td class="py-4 text-slate-600 font-medium">Twin jet hulls average €65–€80 for 15 mins. Family inflatables run ~€25pp.</td>
                                 </tr>
                                 <tr>
-                                    <td class="py-3.5 font-medium text-slate-900">Midday Dining</td>
-                                    <td class="py-3.5">~€45 – €70 <span class="text-slate-400 text-xs">/ meal</span></td>
-                                    <td class="py-3.5 text-slate-500">Easy coastal access pizza and fast-casual assembly blocks.</td>
+                                    <td class="py-4 font-bold text-slate-900">Midday Dining</td>
+                                    <td class="py-4 text-sky-700">~€45 – €70 <span class="text-slate-500 text-xs font-medium">/ meal</span></td>
+                                    <td class="py-4 text-slate-600 font-medium">Easy-to-access casual dining close to points of interest.</td>
                                 </tr>
                                 <tr>
-                                    <td class="py-3.5 font-medium text-zinc-900">Premium Evenings</td>
-                                    <td class="py-3.5">~€90 – €140 <span class="text-slate-400 text-xs">/ dinner</span></td>
-                                    <td class="py-3.5 text-slate-500">Hefty proteins and meat houses suited to teenager capacities.</td>
+                                    <td class="py-4 font-bold text-slate-900">Evening Steakhouses</td>
+                                    <td class="py-4 text-sky-700">~€90 – €140 <span class="text-slate-500 text-xs font-medium">/ dinner</span></td>
+                                    <td class="py-4 text-slate-600 font-medium">Generous, high-quality proteins tailored to older teenager capacities.</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -148,163 +154,165 @@
             </details>
         </section>
 
-        <!-- Main Timeline Blocks -->
+        <!-- Itinerary Timeline -->
         <section class="space-y-8">
-            
+            <h2 class="text-3xl font-extrabold tracking-tight text-slate-900 mb-8 drop-shadow-sm">Your Daily Schedule</h2>
+
             <!-- Day 1 -->
-            <div class="bg-white rounded-3xl border border-sky-100 p-6 sm:p-8 shadow-sm relative overflow-hidden">
-                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4 pb-4 border-b border-slate-50">
+            <div class="glass-card rounded-3xl p-6 sm:p-8 relative overflow-hidden">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4 pb-4 border-b border-slate-200">
                     <div>
-                        <span class="text-xs font-bold uppercase tracking-wider text-sky-600 block">Day 1</span>
-                        <h2 class="text-xl font-bold text-slate-900">Tarmac Arrival & Island Transit</h2>
+                        <span class="text-xs font-bold uppercase tracking-widest text-sky-700 block">Day 1</span>
+                        <h2 class="text-2xl font-bold text-slate-900">Tarmac Arrival & Island Transit</h2>
                     </div>
-                    <span class="text-xs font-medium text-slate-400 self-start sm:self-center">Thursday, July 23</span>
+                    <span class="text-sm font-bold text-slate-600 bg-white/60 px-3 py-1 rounded-lg">Thursday, July 23</span>
                 </div>
-                <div class="space-y-4 text-sm text-slate-600">
-                    <p><strong class="text-slate-900 bg-sky-50 px-2 py-0.5 rounded mr-1">21:40</strong> Touchdown execution at Larnaca terminal corridors.</p>
-                    <p><strong class="text-slate-900 bg-sky-50 px-2 py-0.5 rounded mr-1">22:15</strong> Retrieve key setups from <a href="https://www.getyourcar.com" target="_blank" class="text-sky-600 font-medium hover:underline">Get Your Car</a> lines. Set navigation arrays to left-side traffic flow rules.</p>
-                    <p><strong class="text-slate-900 bg-sky-50 px-2 py-0.5 rounded mr-1">22:30</strong> Route into A3 freeway tracks straight into Ayia Napa, offloading at the <a href="https://www.booking.com/hotel/cy/cyprotel-florida-ayia-napa.html" target="_blank" class="text-sky-600 font-medium hover:underline">Cyprotel Florida</a> lobby bases.</p>
+                
+                <!-- Fixed Image 1: Highly stable Unsplash image of a plane over an island -->
+                <div class="my-5 rounded-2xl overflow-hidden shadow-sm border border-slate-100">
+                    <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1200&q=80" alt="Flight and Arrival" class="w-full h-64 object-cover">
+                </div>
+                <div class="space-y-4 text-sm text-slate-700 font-semibold">
+                    <p><strong class="text-sky-800 bg-sky-100 px-2 py-1 rounded-lg mr-2 font-bold">21:40</strong> Touchdown execution at Larnaca terminal corridors[cite: 1].</p>
+                    <p><strong class="text-sky-800 bg-sky-100 px-2 py-1 rounded-lg mr-2 font-bold">22:15</strong> Retrieve key setups from <a href="https://www.getyourcar.com" target="_blank" class="text-sky-700 font-bold hover:underline">Get Your Car</a> lines. Set navigation arrays to left-side traffic rules.</p>
+                    <p><strong class="text-sky-800 bg-sky-100 px-2 py-1 rounded-lg mr-2 font-bold">22:30</strong> Route into A3 highway tracks straight into Ayia Napa, offloading at the <a href="https://www.booking.com/hotel/cy/cyprotel-florida-ayia-napa.html" target="_blank" class="text-sky-700 font-bold hover:underline">Cyprotel Florida</a> lobby bases.</p>
                 </div>
             </div>
 
             <!-- Day 2 -->
-            <div class="bg-white rounded-3xl border border-sky-100 p-6 sm:p-8 shadow-sm relative overflow-hidden">
-                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4 pb-4 border-b border-slate-50">
+            <div class="glass-card rounded-3xl p-6 sm:p-8 relative overflow-hidden">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4 pb-4 border-b border-slate-200">
                     <div>
-                        <span class="text-xs font-bold uppercase tracking-wider text-purple-600 block">Day 2</span>
-                        <h2 class="text-xl font-bold text-slate-900">WaterWorld Expansion & Drop Vectors</h2>
+                        <span class="text-xs font-bold uppercase tracking-widest text-amber-600 block">Day 2</span>
+                        <h2 class="text-2xl font-bold text-slate-900">WaterWorld Expansion & Drop Vectors</h2>
                     </div>
-                    <span class="text-xs font-medium text-purple-600 bg-purple-50 px-2 py-0.5 rounded-full self-start sm:self-center font-semibold">Avoids Weekend Peak</span>
+                    <span class="text-xs font-bold text-amber-900 bg-amber-200/80 px-3 py-1.5 rounded-lg self-start sm:self-center shadow-sm">Avoids Weekend Crowds</span>
                 </div>
                 
-                <!-- Image Insertion -->
-                <div class="my-4 rounded-2xl overflow-hidden shadow-inner border border-slate-100">
-                    <img src="image_agent_tag_13046817337200412963" alt="WaterWorld park flume layout" class="w-full h-64 object-cover">
-                    <span class="block bg-slate-50 p-2 text-xs text-slate-400 text-center">Massive themed slides at WaterWorld Ayia Napa</span>
+                <!-- Water Park Image -->
+                <div class="my-5 rounded-2xl overflow-hidden shadow-md border border-white/50">
+                    <img src="https://waterworldwaterpark.com/wp-content/uploads/2015/02/Drop-To-Atlantis-Slide-at-WaterWorld-WaterPark-Ayia-Napa-Cyprus-2.jpg" alt="Drop to Atlantis slide at WaterWorld Ayia Napa" class="w-full h-64 object-cover" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1582650625119-3a31f8fa2699?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80';">
                 </div>
 
-                <div class="space-y-4 text-sm text-slate-600">
-                    <p><strong class="text-purple-600 bg-purple-50 px-2 py-0.5 rounded mr-1">10:00</strong> Deploy into <a href="https://www.waterworldwaterpark.com" target="_blank" class="text-sky-600 font-medium hover:underline">WaterWorld Waterpark</a>. Target immediate runs on major velocity sectors like <em>The Fall of Icarus</em>.</p>
+                <div class="space-y-4 text-sm text-slate-700 font-semibold">
+                    <p><strong class="text-amber-800 bg-amber-100 px-2 py-1 rounded-lg mr-2 font-bold">10:00</strong> Deploy into <a href="https://www.waterworldwaterpark.com" target="_blank" class="text-amber-700 font-bold hover:underline">WaterWorld Waterpark</a>. Target immediate runs on major velocity sectors like <em>The Fall of Icarus</em>.</p>
                     
-                    <div class="bg-slate-50 p-4 rounded-2xl text-xs text-slate-500 border border-slate-100">
-                        <span class="font-bold text-slate-700 block mb-1">Park System Operations</span>
-                        Protect feet via water shoes from hot pavement grids. Run cloud-based digital balances via the wet-wristband layout to secure currency. <strong>Crucial action:</strong> Secure a second-day return pass at Customer Service before exit checks.
+                    <div class="bg-white/60 p-4 rounded-2xl text-xs text-slate-700 border border-white font-medium leading-relaxed shadow-sm">
+                        <span class="font-bold text-slate-900 block mb-1 text-sm">Park Strategy</span>
+                        Protect feet via water shoes from hot pavement grids. Run digital balances via the wet-wristband layout to secure currency safely. <strong>Crucial action:</strong> Secure a second-day return pass at Customer Service before exit checks.
                     </div>
 
-                    <p><strong class="text-purple-600 bg-purple-50 px-2 py-0.5 rounded mr-1">16:00</strong> <span class="text-sky-600 font-semibold">🏨 Resort Recovery Window:</span> Full pool decompression or bay activities at Pantachou Beach directly past the terrace thresholds.</p>
-                    <p><strong class="text-purple-600 bg-purple-50 px-2 py-0.5 rounded mr-1">20:00</strong> Meat dinner at <a href="https://www.facebook.com/NikitasSteakHouse/" target="_blank" class="text-sky-600 font-medium hover:underline">Nikita's Steak House</a> along inner municipal sectors.</p>
+                    <p><strong class="text-amber-800 bg-amber-100 px-2 py-1 rounded-lg mr-2 font-bold">16:00</strong> <span class="text-sky-700 font-bold">🏨 Resort Recovery Window:</span> Full pool decompression or bay activities at Pantachou Beach directly past the terrace thresholds.</p>
+                    <p><strong class="text-amber-800 bg-amber-100 px-2 py-1 rounded-lg mr-2 font-bold">20:00</strong> Dinner at <a href="https://www.facebook.com/NikitasSteakHouse/" target="_blank" class="text-amber-700 font-bold hover:underline">Nikita's Steak House</a> along inner municipal sectors.</p>
                 </div>
             </div>
 
             <!-- Day 3 -->
-            <div class="bg-white rounded-3xl border border-sky-100 p-6 sm:p-8 shadow-sm relative overflow-hidden">
-                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4 pb-4 border-b border-slate-50">
+            <div class="glass-card rounded-3xl p-6 sm:p-8 relative overflow-hidden">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4 pb-4 border-b border-slate-200">
                     <div>
-                        <span class="text-xs font-bold uppercase tracking-wider text-amber-600 block">Day 3</span>
-                        <h2 class="text-xl font-bold text-slate-900">Sandbar Links & High-Heat Retreats</h2>
+                        <span class="text-xs font-bold uppercase tracking-widest text-sky-700 block">Day 3</span>
+                        <h2 class="text-2xl font-bold text-slate-900">Sandbar Links & High-Heat Retreats</h2>
                     </div>
-                    <span class="text-xs font-medium text-slate-400 self-start sm:self-center">Saturday, July 25</span>
+                    <span class="text-sm font-bold text-slate-600 bg-white/60 px-3 py-1 rounded-lg">Saturday, July 25</span>
                 </div>
 
-                <!-- Image Insertion -->
-                <div class="my-4 rounded-2xl overflow-hidden shadow-inner border border-slate-100">
-                    <img src="image_agent_tag_13046817337200413794" alt="Nissi Beach clear bays" class="w-full h-64 object-cover">
-                    <span class="block bg-slate-50 p-2 text-xs text-slate-400 text-center">Turquoise sandbars along Nissi Beach</span>
+                <!-- Beach Image -->
+                <div class="my-5 rounded-2xl overflow-hidden shadow-md border border-white/50">
+                    <img src="https://images.pexels.com/photos/1450360/pexels-photo-1450360.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Sunny tropical ocean wave hitting golden sand shore" class="w-full h-64 object-cover">
                 </div>
 
-                <div class="space-y-4 text-sm text-slate-600">
-                    <p><strong class="text-amber-600 bg-amber-50 px-2 py-0.5 rounded mr-1">10:00</strong> Navigate clear water sectors across Nissi Beach tidal zones.</p>
+                <div class="space-y-4 text-sm text-slate-700 font-semibold">
+                    <p><strong class="text-sky-800 bg-sky-100 px-2 py-1 rounded-lg mr-2 font-bold">10:00</strong> Navigate clear water sectors across Nissi Beach tidal zones.</p>
                     
-                    <div class="bg-slate-50 p-4 rounded-2xl text-xs text-slate-500 border border-slate-100">
-                        <span class="font-bold text-slate-700 block mb-1">Water Sports Deployments</span>
-                        Utilize operators like <a href="https://NissiBeachWaterSports.com" target="_blank" class="text-sky-600 font-medium hover:underline">Nissi Beach Water Sports</a> or local teams like <a href="https://www.facebook.com/ayianapajetski/" target="_blank" class="text-sky-600 font-medium hover:underline">Ayia Napa Jet Ski</a>. Confirm standard flat-rates before boat engine start sequences.
+                    <div class="bg-white/60 p-4 rounded-2xl text-xs text-slate-700 border border-white font-medium leading-relaxed shadow-sm">
+                        <span class="font-bold text-slate-900 block mb-1 text-sm">Water Sports Deployments</span>
+                        Utilize operators like <a href="https://NissiBeachWaterSports.com" target="_blank" class="text-sky-700 font-bold hover:underline">Nissi Beach Water Sports</a> or local teams like <a href="https://www.facebook.com/ayianapajetski/" target="_blank" class="text-sky-700 font-bold hover:underline">Ayia Napa Jet Ski</a>. Confirm standard flat-rates before boat engine start sequences.
                     </div>
 
-                    <p><strong class="text-amber-600 bg-amber-50 px-2 py-0.5 rounded mr-1">13:00</strong> Midday lunch breaks at <a href="https://www.atlas-restaurant-ayianapa.com" target="_blank" class="text-sky-600 font-medium hover:underline">Atlas Italian Restaurant</a>.</p>
-                    <p><strong class="text-amber-600 bg-amber-50 px-2 py-0.5 rounded mr-1">14:30</strong> <span class="text-sky-600 font-semibold">🏨 Resort Recovery Window:</span> Evade peak solar heat levels inside hotel pool areas or shaded beachfront chairs.</p>
-                    <p><strong class="text-amber-600 bg-amber-50 px-2 py-0.5 rounded mr-1">17:15</strong> Tactical exploration run down Cape Greco Sea Cave rock cliffs.</p>
-                    <p><strong class="text-amber-600 bg-amber-50 px-2 py-0.5 rounded mr-1">20:00</strong> Dinner operations inside <a href="https://www.davincinapiana.com" target="_blank" class="text-sky-600 font-medium hover:underline">Davinci Napiana Italian Cuisine</a> blocks.</p>
+                    <p><strong class="text-sky-800 bg-sky-100 px-2 py-1 rounded-lg mr-2 font-bold">13:00</strong> Midday lunch breaks at <a href="https://www.atlas-restaurant-ayianapa.com" target="_blank" class="text-sky-700 font-bold hover:underline">Atlas Italian Restaurant</a>.</p>
+                    <p><strong class="text-sky-800 bg-sky-100 px-2 py-1 rounded-lg mr-2 font-bold">14:30</strong> <span class="text-amber-700 font-bold">🏨 Resort Recovery Window:</span> Evade peak solar heat levels inside hotel pool areas or shaded beachfront chairs.</p>
+                    <p><strong class="text-sky-800 bg-sky-100 px-2 py-1 rounded-lg mr-2 font-bold">17:15</strong> Tactical exploration run down Cape Greco Sea Cave rock cliffs.</p>
+                    <p><strong class="text-sky-800 bg-sky-100 px-2 py-1 rounded-lg mr-2 font-bold">20:00</strong> Dinner operations inside <a href="https://www.davincinapiana.com" target="_blank" class="text-sky-700 font-bold hover:underline">Davinci Napiana Italian Cuisine</a> blocks.</p>
                 </div>
             </div>
 
             <!-- Day 4 -->
-            <div class="bg-white rounded-3xl border border-sky-100 p-6 sm:p-8 shadow-sm relative overflow-hidden">
-                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4 pb-4 border-b border-slate-50">
+            <div class="glass-card rounded-3xl p-6 sm:p-8 relative overflow-hidden">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4 pb-4 border-b border-slate-200">
                     <div>
-                        <span class="text-xs font-bold uppercase tracking-wider text-teal-600 block">Day 4</span>
-                        <h2 class="text-xl font-bold text-slate-900">Marine Fast-Hulls & Blue Lagoon Excursions</h2>
+                        <span class="text-xs font-bold uppercase tracking-widest text-amber-600 block">Day 4</span>
+                        <h2 class="text-2xl font-bold text-slate-900">Marine Fast-Hulls & Blue Lagoon Excursions</h2>
                     </div>
-                    <span class="text-xs font-medium text-slate-400 self-start sm:self-center">Sunday, July 26</span>
+                    <span class="text-sm font-bold text-slate-600 bg-white/60 px-3 py-1 rounded-lg">Sunday, July 26</span>
                 </div>
 
-                <!-- Image Insertion -->
-                <div class="my-4 rounded-2xl overflow-hidden shadow-inner border border-slate-100">
-                    <img src="image_agent_tag_13046817337200411360" alt="Harbor marine safari runners" class="w-full h-64 object-cover">
-                    <span class="block bg-slate-50 p-2 text-xs text-slate-400 text-center">Coastal marine safari cruise heading out</span>
+                <!-- Fast Boat Imagery -->
+                <div class="my-5 rounded-2xl overflow-hidden shadow-md border border-white/50">
+                    <img src="https://images.pexels.com/photos/163236/luxury-yacht-boat-speed-water-163236.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Fast speedboat racing across deep blue ocean water" class="w-full h-64 object-cover">
                 </div>
 
-                <div class="space-y-4 text-sm text-slate-600">
-                    <p><strong class="text-teal-600 bg-teal-50 px-2 py-0.5 rounded mr-1">10:00</strong> Harbor links out of central Ayia Napa docks.</p>
+                <div class="space-y-4 text-sm text-slate-700 font-semibold">
+                    <p><strong class="text-amber-800 bg-amber-100 px-2 py-1 rounded-lg mr-2 font-bold">10:00</strong> Harbor links out of central Ayia Napa docks.</p>
                     
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs text-slate-500">
-                        <div class="p-4 bg-slate-50 border border-slate-100 rounded-2xl">
-                            <span class="font-bold text-slate-700 block mb-1">Shared Cruiser Runner</span>
-                            <a href="https://www.yellowsubmarineboattrips.com" target="_blank" class="text-sky-600 font-medium hover:underline">Yellow Submarine Excursions</a> provides sea-cave viewing arrays and deep water drop zones.
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs text-slate-700 font-medium">
+                        <div class="p-4 bg-white/60 border border-white rounded-2xl shadow-sm">
+                            <span class="font-bold text-slate-900 block mb-1 text-sm">Shared Cruiser Runner</span>
+                            <a href="https://www.yellowsubmarineboattrips.com" target="_blank" class="text-sky-700 font-bold hover:underline">Yellow Submarine Excursions</a> provides sea-cave viewing arrays and deep water drop zones.
                         </div>
-                        <div class="p-4 bg-slate-50 border border-slate-100 rounded-2xl">
-                            <span class="font-bold text-slate-700 block mb-1">Bespoke Fast Charter</span>
-                            <a href="https://www.atlantisazimut.com" target="_blank" class="text-sky-600 font-medium hover:underline">Atlantis Azimut Private Craft</a> offers customizable high-speed routing straight to Blue Lagoon areas.
+                        <div class="p-4 bg-white/60 border border-white rounded-2xl shadow-sm">
+                            <span class="font-bold text-slate-900 block mb-1 text-sm">Bespoke Fast Charter</span>
+                            <a href="https://www.atlantisazimut.com" target="_blank" class="text-sky-700 font-bold hover:underline">Atlantis Azimut Private Craft</a> offers customizable high-speed routing straight to Blue Lagoon areas.
                         </div>
                     </div>
 
-                    <p><strong class="text-teal-600 bg-teal-50 px-2 py-0.5 rounded mr-1">13:15</strong> Group dinner allocations at <a href="https://www.quadro-restaurant.com" target="_blank" class="text-sky-600 font-medium hover:underline">Quadro Restaurant</a>.</p>
-                    <p><strong class="text-teal-600 bg-teal-50 px-2 py-0.5 rounded mr-1">15:00</strong> <span class="text-sky-600 font-semibold">🏨 Resort Recovery Window:</span> Full open afternoon block dedicated strictly to sea craft rentals or relaxation inside hotel bounds.</p>
-                    <p><strong class="text-teal-600 bg-teal-50 px-2 py-0.5 rounded mr-1">20:00</strong> Premium cuts and dinners at <a href="https://www.eratorestaurantayianapa.com" target="_blank" class="text-sky-600 font-medium hover:underline">Erato Steakhouse</a> slots. </p>
+                    <p><strong class="text-amber-800 bg-amber-100 px-2 py-1 rounded-lg mr-2 font-bold">13:15</strong> Group dinner allocations at <a href="https://www.quadro-restaurant.com" target="_blank" class="text-amber-700 font-bold hover:underline">Quadro Restaurant</a>.</p>
+                    <p><strong class="text-amber-800 bg-amber-100 px-2 py-1 rounded-lg mr-2 font-bold">15:00</strong> <span class="text-sky-700 font-bold">🏨 Resort Recovery Window:</span> Full open afternoon block dedicated strictly to sea craft rentals or relaxation inside hotel bounds.</p>
+                    <p><strong class="text-amber-800 bg-amber-100 px-2 py-1 rounded-lg mr-2 font-bold">20:00</strong> Premium cuts and dinners at <a href="https://www.eratorestaurantayianapa.com" target="_blank" class="text-amber-700 font-bold hover:underline">Erato Steakhouse</a> slots.</p>
                 </div>
             </div>
 
             <!-- Day 5 -->
-            <div class="bg-white rounded-3xl border border-sky-100 p-6 sm:p-8 shadow-sm relative overflow-hidden">
-                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4 pb-4 border-b border-slate-50">
+            <div class="glass-card rounded-3xl p-6 sm:p-8 relative overflow-hidden">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4 pb-4 border-b border-slate-200">
                     <div>
-                        <span class="text-xs font-bold uppercase tracking-wider text-rose-600 block">Day 5</span>
-                        <h2 class="text-xl font-bold text-slate-900">Terminus Split Routes & Airport Recovery</h2>
+                        <span class="text-xs font-bold uppercase tracking-wider text-sky-700 block">Day 5</span>
+                        <h2 class="text-2xl font-bold text-slate-900">Terminus Split Routes & Airport Recovery</h2>
                     </div>
-                    <span class="text-xs font-medium text-slate-400 self-start sm:self-center">Monday, July 27</span>
+                    <span class="text-sm font-bold text-slate-600 bg-white/60 px-3 py-1 rounded-lg">Monday, July 27</span>
                 </div>
 
-                <!-- Image Insertion -->
-                <div class="my-4 rounded-2xl overflow-hidden shadow-inner border border-slate-100">
-                    <img src="image_agent_tag_13046817337200414625" alt="Cape Greco panoramic paths" class="w-full h-64 object-cover">
-                    <span class="block bg-slate-50 p-2 text-xs text-slate-400 text-center">Scenic panoramic frames around Cape Greco reserves</span>
+                <!-- Fixed Image 5: Stable Unsplash image of a beautiful sunny coastline -->
+                <div class="my-5 rounded-2xl overflow-hidden shadow-md border border-white/50">
+                    <img src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Beautiful sunny coastline and beach" class="w-full h-64 object-cover">
                 </div>
 
-                <p class="text-xs text-slate-400 font-medium mb-2">Execute checkout protocols by 11:00. Relocate luggage configurations to hotel holding locks, then prioritize the final pathway:</p>
+                <p class="text-xs text-slate-700 font-extrabold uppercase tracking-wider mb-3">Execute checkout protocols by 11:00. Choose your afternoon track:</p>
                 
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
-                    <div class="p-4 bg-purple-50/40 border border-purple-100 rounded-2xl">
-                        <span class="font-bold text-purple-900 block mb-1">Track Alpha: WaterWorld Encore</span>
-                        Deploy the 50% day pass code back at <a href="https://www.waterworldwaterpark.com" target="_blank" class="text-sky-600 font-medium hover:underline">WaterWorld</a> to rerun major drop systems from 10:00 to 14:30.
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-semibold mb-5">
+                    <div class="p-4 bg-sky-100/70 border border-sky-200 rounded-2xl shadow-sm">
+                        <span class="font-bold text-sky-900 block mb-1 text-sm">Track Alpha: WaterWorld Encore</span>
+                        Deploy the 50% day pass code back at <a href="https://www.waterworldwaterpark.com" target="_blank" class="text-sky-700 font-bold hover:underline">WaterWorld</a> to rerun major drop systems from 10:00 to 14:30.
                     </div>
-                    <div class="p-4 bg-amber-50/40 border border-amber-100 rounded-2xl">
-                        <span class="font-bold text-amber-900 block mb-1">Track Beta: Inland History & Forest Tracks</span>
-                        Tour medieval yards at <a href="https://www.ayianapamonastery.org" target="_blank" class="text-sky-600 font-medium hover:underline">Ayia Napa Monastery</a>, process shopping runs, and drive Cape Greco reserves.
+                    <div class="p-4 bg-amber-100/70 border border-amber-200 rounded-2xl shadow-sm">
+                        <span class="font-bold text-amber-900 block mb-1 text-sm">Track Beta: History & Trails</span>
+                        Tour medieval yards at <a href="https://www.ayianapamonastery.org" target="_blank" class="text-amber-700 font-bold hover:underline">Ayia Napa Monastery</a>, process shopping runs, and drive Cape Greco reserves.
                     </div>
                 </div>
 
-                <div class="space-y-4 text-sm text-slate-600 pt-4 border-t border-slate-100">
-                    <p><strong class="text-rose-600 bg-rose-50 px-2 py-0.5 rounded mr-1">12:30</strong> Grab midday nourishment at <a href="https://www.saleepepeayianapa.com" target="_blank" class="text-sky-600 font-medium hover:underline">Sale e Pepe</a> or on hotel terrace lines.</p>
-                    <p><strong class="text-rose-600 bg-rose-50 px-2 py-0.5 rounded mr-1">14:30</strong> <span class="text-sky-600 font-semibold">🏨 Resort Recovery Window:</span> Apply final pool/beach exposures. Utilize terminal hotel changing wings to handle shower routines before stowing cargo.</p>
-                    <p><strong class="text-rose-600 bg-rose-50 px-2 py-0.5 rounded mr-1">18:00</strong> Route back westward down the A3 vector straight to Larnaca airport.</p>
-                    <p><strong class="text-rose-600 bg-rose-50 px-2 py-0.5 rounded mr-1">19:00</strong> Surrender rental setups to Get Your Car desk elements before custom security lines.</p>
-                    <p><strong class="text-rose-600 bg-rose-50 px-2 py-0.5 rounded mr-1">21:55</strong> Outbound take-off corridor flight wheels up.</p>
+                <div class="space-y-4 text-sm text-slate-700 font-semibold pt-4 border-t border-slate-200">
+                    <p><strong class="text-sky-800 bg-sky-100 px-2 py-1 rounded-lg mr-2 font-bold">12:30</strong> Grab midday nourishment at <a href="https://www.saleepepeayianapa.com" target="_blank" class="text-sky-700 font-bold hover:underline">Sale e Pepe</a> or on hotel terrace lines.</p>
+                    <p><strong class="text-sky-800 bg-sky-100 px-2 py-1 rounded-lg mr-2 font-bold">14:30</strong> <span class="text-amber-600 font-bold">🏨 Resort Recovery Window:</span> Apply final pool/beach exposures. Utilize terminal hotel changing wings to handle shower routines before stowing cargo.</p>
+                    <p><strong class="text-sky-800 bg-sky-100 px-2 py-1 rounded-lg mr-2 font-bold">18:00</strong> Route back westward down the A3 vector straight to Larnaca airport.</p>
+                    <p><strong class="text-sky-800 bg-sky-100 px-2 py-1 rounded-lg mr-2 font-bold">19:00</strong> Surrender rental setups to Get Your Car desk elements before custom security lines.</p>
+                    <p><strong class="text-sky-800 bg-sky-100 px-2 py-1 rounded-lg mr-2 font-bold">21:55</strong> Outbound take-off corridor flight wheels up[cite: 1].</p>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer System -->
-    <footer class="max-w-4xl mx-auto py-12 px-6 text-center text-xs text-slate-400 border-t border-slate-200/60">
+    <!-- Footer -->
+    <footer class="max-w-4xl mx-auto py-12 px-6 text-center text-xs font-bold text-slate-600/80">
         <p>Cohen Family Ayia Napa Master Itinerary Architecture.</p>
     </footer>
 
